@@ -5,7 +5,7 @@
         <capability name="Navigation items with more than one left or right bar item" minToolsVersion="7.0"/>
     </dependencies>
     <scenes>
-        <!--Trip Name-->
+        <!--Trip-->
         <scene sceneID="N13-kE-fUu">
             <objects>
                 <tableViewController id="ERZ-ls-CuG" customClass="TripTableViewController" sceneMemberID="viewController">
@@ -14,34 +14,59 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="xeQ-cS-vs0" customClass="EntryCell">
-                                <rect key="frame" x="0.0" y="92" width="600" height="44"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="xeQ-cS-vs0" id="Jpb-ob-Cmt">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                    <animations/>
-                                </tableViewCellContentView>
-                                <animations/>
-                            </tableViewCell>
-                        </prototypes>
                         <connections>
                             <outlet property="dataSource" destination="ERZ-ls-CuG" id="cEu-kG-fV8"/>
                             <outlet property="delegate" destination="ERZ-ls-CuG" id="B4N-5r-LC9"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Trip Name" id="B2X-MK-jHF">
+                    <navigationItem key="navigationItem" title="Trip" id="B2X-MK-jHF">
                         <rightBarButtonItems>
                             <barButtonItem systemItem="compose" id="0Zu-i0-1OE"/>
                             <barButtonItem systemItem="camera" id="4vg-zo-kBJ"/>
-                            <barButtonItem title="Item" id="zpj-tk-TOT"/>
+                            <barButtonItem image="pinIcon" id="zpj-tk-TOT"/>
                         </rightBarButtonItems>
                     </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xpq-Y5-DVa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="157" y="265"/>
+        </scene>
+        <!--Collection View Controller-->
+        <scene sceneID="Xvb-iE-Bz5">
+            <objects>
+                <collectionViewController id="1dG-pA-1CC" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="HAd-eg-vyK">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="AkF-eq-gSj">
+                            <size key="itemSize" width="50" height="50"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="mBK-vh-UI5">
+                                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <animations/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                                <animations/>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="1dG-pA-1CC" id="leq-fu-OAf"/>
+                            <outlet property="delegate" destination="1dG-pA-1CC" id="C8D-hR-OFT"/>
+                        </connections>
+                    </collectionView>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="R6n-3g-mzE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="157" y="961"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="hbc-bg-ejF">
@@ -61,4 +86,7 @@
             <point key="canvasLocation" x="-663" y="265"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="pinIcon" width="24" height="24"/>
+    </resources>
 </document>

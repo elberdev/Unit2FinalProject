@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3BC200001BCAF380003A57F0 /* vid.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 3BC2FFFC1BCACEDE003A57F0 /* vid.m4v */; };
+		3BC200021BCAF993003A57F0 /* vid2.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 3BC200011BCAF983003A57F0 /* vid2.m4v */; };
+		3BC200051BCB2D96003A57F0 /* TripCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BC200041BCB2D96003A57F0 /* TripCollectionViewController.m */; settings = {ASSET_TAGS = (); }; };
 		3BC2FFB71BC9A968003A57F0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BC2FFB61BC9A968003A57F0 /* main.m */; };
 		3BC2FFBA1BC9A968003A57F0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BC2FFB91BC9A968003A57F0 /* AppDelegate.m */; };
 		3BC2FFC01BC9A968003A57F0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BC2FFBE1BC9A968003A57F0 /* Main.storyboard */; };
@@ -15,9 +18,13 @@
 		3BC2FFCE1BC9A9C7003A57F0 /* TripTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BC2FFCD1BC9A9C7003A57F0 /* TripTableViewController.m */; settings = {ASSET_TAGS = (); }; };
 		3BC2FFD01BC9AF63003A57F0 /* EntryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3BC2FFCF1BC9AF63003A57F0 /* EntryCell.xib */; settings = {ASSET_TAGS = (); }; };
 		3BC2FFD31BC9B7F1003A57F0 /* EntryCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BC2FFD21BC9B7F1003A57F0 /* EntryCell.m */; settings = {ASSET_TAGS = (); }; };
+		3BC2FFD61BCAB5E9003A57F0 /* Entry.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BC2FFD51BCAB5E9003A57F0 /* Entry.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3BC200011BCAF983003A57F0 /* vid2.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = vid2.m4v; sourceTree = "<group>"; };
+		3BC200031BCB2D96003A57F0 /* TripCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TripCollectionViewController.h; sourceTree = "<group>"; };
+		3BC200041BCB2D96003A57F0 /* TripCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TripCollectionViewController.m; sourceTree = "<group>"; };
 		3BC2FFB21BC9A968003A57F0 /* GoJournal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoJournal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BC2FFB61BC9A968003A57F0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		3BC2FFB81BC9A968003A57F0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -31,6 +38,9 @@
 		3BC2FFCF1BC9AF63003A57F0 /* EntryCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EntryCell.xib; sourceTree = "<group>"; };
 		3BC2FFD11BC9B7F1003A57F0 /* EntryCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EntryCell.h; sourceTree = "<group>"; };
 		3BC2FFD21BC9B7F1003A57F0 /* EntryCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EntryCell.m; sourceTree = "<group>"; };
+		3BC2FFD41BCAB5E9003A57F0 /* Entry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Entry.h; sourceTree = "<group>"; };
+		3BC2FFD51BCAB5E9003A57F0 /* Entry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Entry.m; sourceTree = "<group>"; };
+		3BC2FFFC1BCACEDE003A57F0 /* vid.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = vid.m4v; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,9 +77,14 @@
 				3BC2FFB91BC9A968003A57F0 /* AppDelegate.m */,
 				3BC2FFCC1BC9A9C7003A57F0 /* TripTableViewController.h */,
 				3BC2FFCD1BC9A9C7003A57F0 /* TripTableViewController.m */,
+				3BC200031BCB2D96003A57F0 /* TripCollectionViewController.h */,
+				3BC200041BCB2D96003A57F0 /* TripCollectionViewController.m */,
 				3BC2FFD11BC9B7F1003A57F0 /* EntryCell.h */,
 				3BC2FFD21BC9B7F1003A57F0 /* EntryCell.m */,
 				3BC2FFCF1BC9AF63003A57F0 /* EntryCell.xib */,
+				3BC2FFD41BCAB5E9003A57F0 /* Entry.h */,
+				3BC2FFD51BCAB5E9003A57F0 /* Entry.m */,
+				3BC2FFFB1BCACEC3003A57F0 /* Resources */,
 				3BC2FFBE1BC9A968003A57F0 /* Main.storyboard */,
 				3BC2FFC11BC9A968003A57F0 /* Assets.xcassets */,
 				3BC2FFC31BC9A968003A57F0 /* LaunchScreen.storyboard */,
@@ -85,6 +100,15 @@
 				3BC2FFB61BC9A968003A57F0 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3BC2FFFB1BCACEC3003A57F0 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				3BC200011BCAF983003A57F0 /* vid2.m4v */,
+				3BC2FFFC1BCACEDE003A57F0 /* vid.m4v */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -145,6 +169,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3BC200021BCAF993003A57F0 /* vid2.m4v in Resources */,
+				3BC200001BCAF380003A57F0 /* vid.m4v in Resources */,
 				3BC2FFD01BC9AF63003A57F0 /* EntryCell.xib in Resources */,
 				3BC2FFC51BC9A968003A57F0 /* LaunchScreen.storyboard in Resources */,
 				3BC2FFC21BC9A968003A57F0 /* Assets.xcassets in Resources */,
@@ -160,9 +186,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				3BC2FFD31BC9B7F1003A57F0 /* EntryCell.m in Sources */,
+				3BC2FFD61BCAB5E9003A57F0 /* Entry.m in Sources */,
 				3BC2FFBA1BC9A968003A57F0 /* AppDelegate.m in Sources */,
 				3BC2FFB71BC9A968003A57F0 /* main.m in Sources */,
 				3BC2FFCE1BC9A9C7003A57F0 /* TripTableViewController.m in Sources */,
+				3BC200051BCB2D96003A57F0 /* TripCollectionViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

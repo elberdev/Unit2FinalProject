@@ -6,12 +6,14 @@
 //  Copyright © 2015 Elber Carneiro. All rights reserved.
 //
 
+#import <AVKit/AVKit.h>
 #import "TripTableViewController.h"
 #import "EntryCell.h"
+#import "Entry.h"
 
 @interface TripTableViewController ()
 
-@property (nonatomic) NSMutableArray *entries;
+@property (nonatomic) NSMutableArray <Entry *> *entries;
 
 @end
 
@@ -19,6 +21,49 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    self.entries = [[NSMutableArray alloc] init];
+    
+    [self setupDemoContent];
+    [self setupCells];
+}
+
+- (void)setupDemoContent {
+    
+    UIImage *image1 = [UIImage imageNamed:@"wilderness1"];
+    Entry *entryOne = [[Entry alloc] initWithImage:image1];
+    [self.entries addObject:entryOne];
+    
+    UIImage *image2 = [UIImage imageNamed:@"wilderness2"];
+    Entry *entryTwo = [[Entry alloc] initWithImage:image2];
+    [self.entries addObject:entryTwo];
+    
+    NSString *text1 = @"It's a beautiful sunny day! I hear the birds in my ear and in my mind. Seriously, they won't stop chirping. On an on and on. All afternoon. I haven't seen another human being for two days now. The berries are getting harder and harder to find. I almost caught a squirrel. So hungry.";
+    Entry *entryThree = [[Entry alloc] initWithText:text1];
+    [self.entries addObject:entryThree];
+    
+    UIImage *image3 = [UIImage imageNamed:@"wilderness2"];
+    Entry *entryFour = [[Entry alloc] initWithImage:image3];
+    [self.entries addObject:entryFour];
+    
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"vid" ofType:@"m4v"];
+    NSLog(@"%@", path);
+    NSURL *url = [NSURL fileURLWithPath:path];
+    Entry *entryFive = [[Entry alloc] initWithVideoURL:url];
+    [self.entries addObject:entryFive];
+    
+    NSString *path2 = [[NSBundle mainBundle] pathForResource:@"vid2" ofType:@"m4v"];
+    NSLog(@"%@", path2);
+    NSURL *url2 = [NSURL fileURLWithPath:path2];
+    Entry *entrySix = [[Entry alloc] initWithVideoURL:url2];
+    [self.entries addObject:entrySix];
+}
+
+- (void)setupCells {
+    self.tableView.rowHeight = UITableViewAutomaticDimension;
+    self.tableView.estimatedRowHeight = 44.0;
+    
+    [self.tableView registerNib:[UINib nibWithNibName:@"EntryCell" bundle:nil] forCellReuseIdentifier:@"entryCellIdentifier"];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -41,12 +86,33 @@
     
     EntryCell *cell = [tableView dequeueReusableCellWithIdentifier:@"entryCellIdentifier" forIndexPath:indexPath];
     
-    if ([self.entries[indexPath.row] class] == [UIImage class]) {
+    if (self.entries[indexPath.row].image != nil) {
         cell.photoView.hidden = NO;
         cell.descriptionLabel.hidden = YES;
+        cell.videoView.hidden = YES;
+        cell.photoView.image = self.entries[indexPath.row].image;
+    } else if (self.entries[indexPath.row].video != nil) {
+        cell.photoView.hidden = YES;
+        cell.descriptionLabel.hidden = YES;
+        cell.videoView.hidden = NO;
+        
+        AVAsset *asset = [AVAsset assetWithURL:self.entries[indexPath.row].video];
+        AVPlayerItem *playerItem = [AVPlayerItem playerItemWithAsset:asset];
+        AVPlayer *player = [AVPlayer playerWithPlayerItem:playerItem];
+        
+        AVPlayerLayer *layer = [AVPlayerLayer playerLayerWithPlayer:player];
+        layer.frame = cell.videoView.bounds;
+        layer.videoGravity = AVLayerVideoGravityResizeAspectFill;
+        
+        [cell.videoView.layer addSublayer:layer];
+        
+        [player play];
+        
     } else {
         cell.photoView.hidden = YES;
         cell.descriptionLabel.hidden = NO;
+        cell.videoView.hidden = YES;
+        cell.descriptionLabel.text = self.entries[indexPath.row].text;
     }
     
     return cell;
