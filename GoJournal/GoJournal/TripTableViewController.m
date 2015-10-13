@@ -28,6 +28,11 @@
     [self setupCells];
 }
 
+- (void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
+    [self.tableView reloadData];
+}
+
 - (void)setupDemoContent {
     
     UIImage *image1 = [UIImage imageNamed:@"wilderness1"];
@@ -57,18 +62,14 @@
     NSURL *url2 = [NSURL fileURLWithPath:path2];
     Entry *entrySix = [[Entry alloc] initWithVideoURL:url2];
     [self.entries addObject:entrySix];
+    [self.entries addObject:entrySix];
 }
 
 - (void)setupCells {
-    self.tableView.rowHeight = UITableViewAutomaticDimension;
     self.tableView.estimatedRowHeight = 44.0;
+    self.tableView.rowHeight = UITableViewAutomaticDimension;
     
     [self.tableView registerNib:[UINib nibWithNibName:@"EntryCell" bundle:nil] forCellReuseIdentifier:@"entryCellIdentifier"];
-}
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 #pragma mark - Table view data source
@@ -80,7 +81,6 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     return self.entries.count;
 }
-
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
@@ -96,17 +96,27 @@
         cell.descriptionLabel.hidden = YES;
         cell.videoView.hidden = NO;
         
-        AVAsset *asset = [AVAsset assetWithURL:self.entries[indexPath.row].video];
-        AVPlayerItem *playerItem = [AVPlayerItem playerItemWithAsset:asset];
-        AVPlayer *player = [AVPlayer playerWithPlayerItem:playerItem];
+        // ASYNC LOADING:
+        dispatch_queue_t queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_HIGH, 0ul);
         
-        AVPlayerLayer *layer = [AVPlayerLayer playerLayerWithPlayer:player];
-        layer.frame = cell.videoView.bounds;
-        layer.videoGravity = AVLayerVideoGravityResizeAspectFill;
+        dispatch_async(queue, ^{
         
-        [cell.videoView.layer addSublayer:layer];
-        
-        [player play];
+            AVAsset *asset = [AVAsset assetWithURL:self.entries[indexPath.row].video];
+            AVPlayerItem *playerItem = [AVPlayerItem playerItemWithAsset:asset];
+            
+            dispatch_sync(dispatch_get_main_queue(), ^{
+                AVPlayer *player = [AVPlayer playerWithPlayerItem:playerItem];
+                
+                AVPlayerLayer *layer = [AVPlayerLayer playerLayerWithPlayer:player];
+                NSLog(@"%@", CGRectCreateDictionaryRepresentation(cell.videoView.bounds));
+                layer.frame = cell.videoView.bounds;
+                layer.videoGravity = AVLayerVideoGravityResizeAspect;
+                
+                [player play];
+                
+                [cell.videoView.layer addSublayer:layer];
+            });
+        });
         
     } else {
         cell.photoView.hidden = YES;

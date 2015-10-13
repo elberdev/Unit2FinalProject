@@ -24,10 +24,10 @@
                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5yY-sq-Umm">
+                    <view contentMode="scaleToFill" placeholderIntrinsicWidth="568" placeholderIntrinsicHeight="169" translatesAutoresizingMaskIntoConstraints="NO" id="5yY-sq-Umm">
                         <rect key="frame" x="16" y="8" width="568" height="169"/>
                         <animations/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="0.24313725489999999" blue="0.49803921569999998" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                 </subviews>
                 <animations/>
@@ -37,7 +37,6 @@
                     <constraint firstItem="5yY-sq-Umm" firstAttribute="top" secondItem="kNa-a9-Uj9" secondAttribute="top" constant="8" id="66L-Xg-XbM"/>
                     <constraint firstItem="RsZ-KV-rRJ" firstAttribute="leading" secondItem="kNa-a9-Uj9" secondAttribute="leading" constant="16" id="7U8-nT-hNV"/>
                     <constraint firstItem="Flm-wS-h5F" firstAttribute="top" secondItem="kNa-a9-Uj9" secondAttribute="top" constant="8" id="FbK-dz-eN0"/>
-                    <constraint firstAttribute="trailing" secondItem="5yY-sq-Umm" secondAttribute="trailing" constant="16" id="NH4-nc-VN4"/>
                     <constraint firstAttribute="bottom" secondItem="5yY-sq-Umm" secondAttribute="bottom" constant="8" id="T2y-Ik-TrO"/>
                     <constraint firstItem="5yY-sq-Umm" firstAttribute="leading" secondItem="kNa-a9-Uj9" secondAttribute="leading" constant="16" id="Yg0-ss-RHQ"/>
                     <constraint firstItem="RsZ-KV-rRJ" firstAttribute="top" secondItem="kNa-a9-Uj9" secondAttribute="top" constant="8" id="cIM-B5-tyG"/>
@@ -45,6 +44,7 @@
                     <constraint firstAttribute="trailing" secondItem="Flm-wS-h5F" secondAttribute="trailing" constant="16" id="koy-Rf-D8W"/>
                     <constraint firstAttribute="bottom" secondItem="RsZ-KV-rRJ" secondAttribute="bottom" constant="8" id="viA-xG-1EF"/>
                     <constraint firstAttribute="trailing" secondItem="RsZ-KV-rRJ" secondAttribute="trailing" constant="16" id="xiE-nW-EZs"/>
+                    <constraint firstAttribute="trailing" secondItem="5yY-sq-Umm" secondAttribute="trailing" constant="16" id="zYv-JT-TUa"/>
                 </constraints>
             </tableViewCellContentView>
             <animations/>

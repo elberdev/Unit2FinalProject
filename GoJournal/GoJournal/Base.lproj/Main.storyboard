@@ -68,6 +68,43 @@
             </objects>
             <point key="canvasLocation" x="157" y="961"/>
         </scene>
+        <!--Test View Controller-->
+        <scene sceneID="bCT-L4-1ul">
+            <objects>
+                <viewController id="fSb-P3-8r7" customClass="TestViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="O74-5q-98r"/>
+                        <viewControllerLayoutGuide type="bottom" id="bhg-1P-dFF"/>
+                    </layoutGuides>
+                    <view key="view" userInteractionEnabled="NO" contentMode="scaleToFill" id="y7R-X5-ptZ">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IF3-sU-j85">
+                                <rect key="frame" x="200" y="200" width="200" height="200"/>
+                                <animations/>
+                                <color key="backgroundColor" red="1" green="0.24313725489999999" blue="0.49803921569999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="4kx-iB-dpx"/>
+                                    <constraint firstAttribute="height" constant="200" id="Dv3-Vg-FlJ"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="IF3-sU-j85" firstAttribute="centerX" secondItem="y7R-X5-ptZ" secondAttribute="centerX" id="KlB-77-TRu"/>
+                            <constraint firstItem="IF3-sU-j85" firstAttribute="centerY" secondItem="y7R-X5-ptZ" secondAttribute="centerY" id="tUF-oX-hRP"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="videoView" destination="IF3-sU-j85" id="20a-Qm-Krs"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hxn-mT-w5l" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="157" y="1633"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="hbc-bg-ejF">
             <objects>
