@@ -7,6 +7,10 @@
 //
 
 #import "AppDelegate.h"
+#import <Parse/Parse.h>
+#import "GJOutings.h"
+#import "GJEntry.h"
+#import "GJUser.h"
 
 @interface AppDelegate ()
 
@@ -17,6 +21,30 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    [Parse setApplicationId:@"NU8WRcLcfFleATEjAsRtTxoeZTwWPQp6b5gWhm9d" clientKey:@"XBPTDhNPb4oeD6ZkABTgrVYD9WXlkHhNrKMUMMgP"];
+    
+    [GJUser registerSubclass];
+    [GJOutings registerSubclass];
+    [GJEntry registerSubclass];
+    
+    GJUser *userDemo = [[GJUser alloc]initWithNewOutingsArray];
+    userDemo.username = @"demo";
+    userDemo.password = @"password";
+    GJOutings *outingsDemo =[[GJOutings alloc]initWithNewEntriesArray];
+    outingsDemo.outingName = @"DemoOuting";
+    [userDemo.outingsArray addObject:outingsDemo];
+    GJEntry *demoEntry = [GJEntry new];
+    demoEntry.mediaType = @"text";
+    demoEntry.textMedia = @"testing";
+    [userDemo signUpInBackgroundWithBlock:^(BOOL succeeded, NSError * _Nullable error) {
+        [[userDemo.outingsArray firstObject].entriesArray addObject:demoEntry];
+        
+        [userDemo saveInBackgroundWithBlock:^(BOOL succeeded, NSError * _Nullable error) {
+            NSLog(@"Success");
+        }];
+
+    }];
+    
     return YES;
 }
 

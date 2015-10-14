@@ -9,20 +9,26 @@
 /* Begin PBXBuildFile section */
 		3BC200001BCAF380003A57F0 /* vid.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 3BC2FFFC1BCACEDE003A57F0 /* vid.m4v */; };
 		3BC200021BCAF993003A57F0 /* vid2.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 3BC200011BCAF983003A57F0 /* vid2.m4v */; };
-		3BC200051BCB2D96003A57F0 /* TripCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BC200041BCB2D96003A57F0 /* TripCollectionViewController.m */; settings = {ASSET_TAGS = (); }; };
-		3BC200081BCD0E3A003A57F0 /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BC200071BCD0E3A003A57F0 /* TestViewController.m */; settings = {ASSET_TAGS = (); }; };
+		3BC200051BCB2D96003A57F0 /* TripCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BC200041BCB2D96003A57F0 /* TripCollectionViewController.m */; };
+		3BC200081BCD0E3A003A57F0 /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BC200071BCD0E3A003A57F0 /* TestViewController.m */; };
 		3BC2FFB71BC9A968003A57F0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BC2FFB61BC9A968003A57F0 /* main.m */; };
 		3BC2FFBA1BC9A968003A57F0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BC2FFB91BC9A968003A57F0 /* AppDelegate.m */; };
 		3BC2FFC01BC9A968003A57F0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BC2FFBE1BC9A968003A57F0 /* Main.storyboard */; };
 		3BC2FFC21BC9A968003A57F0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3BC2FFC11BC9A968003A57F0 /* Assets.xcassets */; };
 		3BC2FFC51BC9A968003A57F0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BC2FFC31BC9A968003A57F0 /* LaunchScreen.storyboard */; };
-		3BC2FFCE1BC9A9C7003A57F0 /* TripTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BC2FFCD1BC9A9C7003A57F0 /* TripTableViewController.m */; settings = {ASSET_TAGS = (); }; };
-		3BC2FFD01BC9AF63003A57F0 /* EntryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3BC2FFCF1BC9AF63003A57F0 /* EntryCell.xib */; settings = {ASSET_TAGS = (); }; };
-		3BC2FFD31BC9B7F1003A57F0 /* EntryCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BC2FFD21BC9B7F1003A57F0 /* EntryCell.m */; settings = {ASSET_TAGS = (); }; };
-		3BC2FFD61BCAB5E9003A57F0 /* Entry.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BC2FFD51BCAB5E9003A57F0 /* Entry.m */; settings = {ASSET_TAGS = (); }; };
+		3BC2FFCE1BC9A9C7003A57F0 /* TripTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BC2FFCD1BC9A9C7003A57F0 /* TripTableViewController.m */; };
+		3BC2FFD01BC9AF63003A57F0 /* EntryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3BC2FFCF1BC9AF63003A57F0 /* EntryCell.xib */; };
+		3BC2FFD31BC9B7F1003A57F0 /* EntryCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BC2FFD21BC9B7F1003A57F0 /* EntryCell.m */; };
+		3BC2FFD61BCAB5E9003A57F0 /* Entry.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BC2FFD51BCAB5E9003A57F0 /* Entry.m */; };
+		C75E8FB21BCDFCF7002699B1 /* GJUser.m in Sources */ = {isa = PBXBuildFile; fileRef = C75E8FB11BCDFCF7002699B1 /* GJUser.m */; };
+		C75E8FB51BCDFE19002699B1 /* GJOutings.m in Sources */ = {isa = PBXBuildFile; fileRef = C75E8FB41BCDFE19002699B1 /* GJOutings.m */; };
+		C75E8FB81BCDFE2E002699B1 /* GJEntry.m in Sources */ = {isa = PBXBuildFile; fileRef = C75E8FB71BCDFE2E002699B1 /* GJEntry.m */; };
+		C75E8FBA1BCEAF06002699B1 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C75E8FB91BCEAF06002699B1 /* CoreLocation.framework */; };
+		DB4FF8311E1B1D4106DA5EF8 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C5C31BA2DF636BADF1CB3624 /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2D65A376A32D1DEA250A423B /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		3BC200011BCAF983003A57F0 /* vid2.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = vid2.m4v; sourceTree = "<group>"; };
 		3BC200031BCB2D96003A57F0 /* TripCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TripCollectionViewController.h; sourceTree = "<group>"; };
 		3BC200041BCB2D96003A57F0 /* TripCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TripCollectionViewController.m; sourceTree = "<group>"; };
@@ -44,6 +50,15 @@
 		3BC2FFD41BCAB5E9003A57F0 /* Entry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Entry.h; sourceTree = "<group>"; };
 		3BC2FFD51BCAB5E9003A57F0 /* Entry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Entry.m; sourceTree = "<group>"; };
 		3BC2FFFC1BCACEDE003A57F0 /* vid.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = vid.m4v; sourceTree = "<group>"; };
+		4612350A0A018714A8C74E0F /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		C5C31BA2DF636BADF1CB3624 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		C75E8FB01BCDFCF7002699B1 /* GJUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GJUser.h; path = GoJournal/GJUser.h; sourceTree = "<group>"; };
+		C75E8FB11BCDFCF7002699B1 /* GJUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GJUser.m; path = GoJournal/GJUser.m; sourceTree = "<group>"; };
+		C75E8FB31BCDFE19002699B1 /* GJOutings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GJOutings.h; path = GoJournal/GJOutings.h; sourceTree = "<group>"; };
+		C75E8FB41BCDFE19002699B1 /* GJOutings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GJOutings.m; path = GoJournal/GJOutings.m; sourceTree = "<group>"; };
+		C75E8FB61BCDFE2E002699B1 /* GJEntry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GJEntry.h; path = GoJournal/GJEntry.h; sourceTree = "<group>"; };
+		C75E8FB71BCDFE2E002699B1 /* GJEntry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GJEntry.m; path = GoJournal/GJEntry.m; sourceTree = "<group>"; };
+		C75E8FB91BCEAF06002699B1 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,17 +66,40 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C75E8FBA1BCEAF06002699B1 /* CoreLocation.framework in Frameworks */,
+				DB4FF8311E1B1D4106DA5EF8 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		17943348DE680DCD65BDA40A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C75E8FB91BCEAF06002699B1 /* CoreLocation.framework */,
+				C5C31BA2DF636BADF1CB3624 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		27F4CEDB1591B852E7EF1385 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2D65A376A32D1DEA250A423B /* Pods.debug.xcconfig */,
+				4612350A0A018714A8C74E0F /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		3BC2FFA91BC9A968003A57F0 = {
 			isa = PBXGroup;
 			children = (
+				C75E8FBB1BCEAF4E002699B1 /* ParseFiles */,
 				3BC2FFB41BC9A968003A57F0 /* GoJournal */,
 				3BC2FFB31BC9A968003A57F0 /* Products */,
+				27F4CEDB1591B852E7EF1385 /* Pods */,
+				17943348DE680DCD65BDA40A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -116,6 +154,19 @@
 			name = Resources;
 			sourceTree = "<group>";
 		};
+		C75E8FBB1BCEAF4E002699B1 /* ParseFiles */ = {
+			isa = PBXGroup;
+			children = (
+				C75E8FB01BCDFCF7002699B1 /* GJUser.h */,
+				C75E8FB11BCDFCF7002699B1 /* GJUser.m */,
+				C75E8FB31BCDFE19002699B1 /* GJOutings.h */,
+				C75E8FB41BCDFE19002699B1 /* GJOutings.m */,
+				C75E8FB61BCDFE2E002699B1 /* GJEntry.h */,
+				C75E8FB71BCDFE2E002699B1 /* GJEntry.m */,
+			);
+			name = ParseFiles;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -123,9 +174,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3BC2FFC91BC9A968003A57F0 /* Build configuration list for PBXNativeTarget "GoJournal" */;
 			buildPhases = (
+				F46A04999D97608F2D29B350 /* Check Pods Manifest.lock */,
 				3BC2FFAE1BC9A968003A57F0 /* Sources */,
 				3BC2FFAF1BC9A968003A57F0 /* Frameworks */,
 				3BC2FFB01BC9A968003A57F0 /* Resources */,
+				ADB5F48A58CD19C641389390 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -185,6 +238,39 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		ADB5F48A58CD19C641389390 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F46A04999D97608F2D29B350 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		3BC2FFAE1BC9A968003A57F0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -193,7 +279,10 @@
 				3BC2FFD31BC9B7F1003A57F0 /* EntryCell.m in Sources */,
 				3BC2FFD61BCAB5E9003A57F0 /* Entry.m in Sources */,
 				3BC200081BCD0E3A003A57F0 /* TestViewController.m in Sources */,
+				C75E8FB81BCDFE2E002699B1 /* GJEntry.m in Sources */,
+				C75E8FB21BCDFCF7002699B1 /* GJUser.m in Sources */,
 				3BC2FFBA1BC9A968003A57F0 /* AppDelegate.m in Sources */,
+				C75E8FB51BCDFE19002699B1 /* GJOutings.m in Sources */,
 				3BC2FFB71BC9A968003A57F0 /* main.m in Sources */,
 				3BC2FFCE1BC9A9C7003A57F0 /* TripTableViewController.m in Sources */,
 				3BC200051BCB2D96003A57F0 /* TripCollectionViewController.m in Sources */,
@@ -304,6 +393,7 @@
 		};
 		3BC2FFCA1BC9A968003A57F0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2D65A376A32D1DEA250A423B /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = GoJournal/Info.plist;
@@ -315,6 +405,7 @@
 		};
 		3BC2FFCB1BC9A968003A57F0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4612350A0A018714A8C74E0F /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = GoJournal/Info.plist;

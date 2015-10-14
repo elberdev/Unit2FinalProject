@@ -1,0 +1,3 @@
+pod 'Parse'
+pod 'ParseUI', '~> 1.1'
+platform :ios, '8.2'
