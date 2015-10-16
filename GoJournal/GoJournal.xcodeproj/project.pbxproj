@@ -24,6 +24,7 @@
 		C75E8FB51BCDFE19002699B1 /* GJOutings.m in Sources */ = {isa = PBXBuildFile; fileRef = C75E8FB41BCDFE19002699B1 /* GJOutings.m */; };
 		C75E8FB81BCDFE2E002699B1 /* GJEntry.m in Sources */ = {isa = PBXBuildFile; fileRef = C75E8FB71BCDFE2E002699B1 /* GJEntry.m */; };
 		C75E8FBA1BCEAF06002699B1 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C75E8FB91BCEAF06002699B1 /* CoreLocation.framework */; };
+		C75E8FBE1BD04A6B002699B1 /* GJCameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C75E8FBD1BD04A6B002699B1 /* GJCameraViewController.m */; };
 		DB4FF8311E1B1D4106DA5EF8 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C5C31BA2DF636BADF1CB3624 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -59,6 +60,8 @@
 		C75E8FB61BCDFE2E002699B1 /* GJEntry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GJEntry.h; path = GoJournal/GJEntry.h; sourceTree = "<group>"; };
 		C75E8FB71BCDFE2E002699B1 /* GJEntry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GJEntry.m; path = GoJournal/GJEntry.m; sourceTree = "<group>"; };
 		C75E8FB91BCEAF06002699B1 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		C75E8FBC1BD04A6B002699B1 /* GJCameraViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GJCameraViewController.h; sourceTree = "<group>"; };
+		C75E8FBD1BD04A6B002699B1 /* GJCameraViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GJCameraViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +119,8 @@
 			children = (
 				3BC2FFB81BC9A968003A57F0 /* AppDelegate.h */,
 				3BC2FFB91BC9A968003A57F0 /* AppDelegate.m */,
+				C75E8FBC1BD04A6B002699B1 /* GJCameraViewController.h */,
+				C75E8FBD1BD04A6B002699B1 /* GJCameraViewController.m */,
 				3BC2FFCC1BC9A9C7003A57F0 /* TripTableViewController.h */,
 				3BC2FFCD1BC9A9C7003A57F0 /* TripTableViewController.m */,
 				3BC200031BCB2D96003A57F0 /* TripCollectionViewController.h */,
@@ -278,6 +283,7 @@
 			files = (
 				3BC2FFD31BC9B7F1003A57F0 /* EntryCell.m in Sources */,
 				3BC2FFD61BCAB5E9003A57F0 /* Entry.m in Sources */,
+				C75E8FBE1BD04A6B002699B1 /* GJCameraViewController.m in Sources */,
 				3BC200081BCD0E3A003A57F0 /* TestViewController.m in Sources */,
 				C75E8FB81BCDFE2E002699B1 /* GJEntry.m in Sources */,
 				C75E8FB21BCDFCF7002699B1 /* GJUser.m in Sources */,
